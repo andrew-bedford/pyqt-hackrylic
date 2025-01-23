@@ -42,7 +42,6 @@ class HackrylicWindow(QMainWindow):
 
         self.background_widget.setGeometry(-self.x(), -self.y(), self.width()+self.x(), self.height()+self.y())
         self.color_layer.setGeometry(self.rect()) 
-        self.browser.setGeometry(self.rect())
         super().resizeEvent(event)
     
     def moveEvent(self, event):
