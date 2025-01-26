@@ -1,5 +1,5 @@
 # pyqt-hackrylic
-Simulates, in a hacky way, the [acrylic window effect](https://learn.microsoft.com/en-us/windows/apps/design/style/acrylic) by using screenshots with a blur effect as the window's background.
+Simulates, in a hacky way, the [acrylic window effect](https://learn.microsoft.com/en-us/windows/apps/design/style/acrylic) by using screenshots with a blur effect as the window's background. If the window is moved or resized, the background will automatically adjust itself.
 
 ## Screenshots
 ### Empty
