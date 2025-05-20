@@ -1,10 +1,13 @@
 import sys
+import os
+os.environ["QT_API"] = "pyqt6"
+os.environ["QTWEBENGINE_DISABLE_SANDBOX"] = "1"
 
-from PyQt6 import QtWidgets, QtCore
-from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget, QLabel, QStyle
-from PyQt6.QtWebEngineWidgets import QWebEngineView
-from PyQt6.QtCore import Qt, QUrl
-from PyQt6.QtGui import QPixmap, QGuiApplication
+from qtpy import QtWidgets, QtCore
+from qtpy.QtWidgets import QApplication, QMainWindow, QWidget, QLabel, QStyle
+from qtpy.QtWebEngineWidgets import QWebEngineView
+from qtpy.QtCore import Qt, QUrl
+from qtpy.QtGui import QPixmap, QGuiApplication
 
 class HackrylicWindow(QMainWindow):
     def __init__(self):
