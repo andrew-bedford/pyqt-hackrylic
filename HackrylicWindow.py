@@ -36,7 +36,11 @@ class HackrylicWindow(QMainWindow):
 
         self.previousWindowState = self.windowState()
 
-        # Put your other controls on top as children of `main_widget`
+        # Put your other controls on top as children of `main_widget`. For example:
+        # self.browser = QWebEngineView(self.main_widget)
+        # self.browser.setGeometry(self.rect())
+        # self.browser.page().setBackgroundColor(QtCore.Qt.GlobalColor.transparent)
+        # self.browser.setUrl(QUrl("http://localhost:8080"))
 
     def resizeEvent(self, event):
         # Quick attempt to get the titlebar's height so that we can correctly offset the image. We do not actually
